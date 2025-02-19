@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { GithubLabel } from '../../interfaces';
+import { GitHubLabel } from '../../interfaces';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
 })
 export class LabelsSelectorComponent { 
 
-  labels = input.required<GithubLabel[]>()
+  labels = input.required<GitHubLabel[]>()
 
 }
