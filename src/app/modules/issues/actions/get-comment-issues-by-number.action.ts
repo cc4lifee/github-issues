@@ -1,11 +1,12 @@
 
 import { sleep } from "@helpers/sleep";
-import { environment } from "src/environments/environment";
+import { environment } from "src/environments/environment.development";
 import { GitHubIssue } from "../interfaces";
 
 const BASE_URL = environment.baseUrl;
 const GITHUB_TOKEN = environment.gitHubToken;
 export const getCommentIssueByNumber = async (issueNumber: string): Promise<GitHubIssue[]> => {
+    console.log('get Issue by number called');
     await sleep(1500)
 
     try {
